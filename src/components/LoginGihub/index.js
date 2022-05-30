@@ -33,7 +33,7 @@ export default function LoginGithub(props) {
         if(props.page === "register") {
             props.onSuccess(res.data, "GITHUB")
         } else {
-            props.onSuccess(res.data.email)
+            props.onSuccess(res.data.login)
         }
     };
 
